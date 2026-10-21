@@ -25,7 +25,9 @@ function HomePage() {
   if (loading) return null;
 
   const filteredProducts = products.filter((product) => {
-    const matchesSearch = product.title.toLowerCase().includes(searchTerm);
+    const matchesSearch = product.title
+      .toLowerCase()
+      .includes(searchTerm.toLowerCase());
     const matchesCategory = selectedCategory
       ? product.category === selectedCategory
       : true;
