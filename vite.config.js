@@ -10,5 +10,6 @@ import tailwindcss from "@tailwindcss/vite";
 
 // Vite configuration
 export default defineConfig({
+  base: "/e-commerce-project/",
   plugins: [react(), tailwindcss()],
 });
