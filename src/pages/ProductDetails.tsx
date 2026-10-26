@@ -47,9 +47,15 @@ function ProductDetails() {
         ${product.price.toFixed(2)}
       </p>
       <p className="text-sm text-gray-400 mt-1">
-        {/* if product.rating is not null access rate */}★
+        <span className="text-amber-400">★</span>
         {product.rating?.rate || 0} ({product.rating?.count || 0} reviews)
       </p>
+      <button
+        onClick={() => addToCart(product)}
+        className="mt-4 w-full bg-gradient-to-r from-slate-900 via-blue-700 to-slate-900 text-white text-sm font-semibold py-2.5 rounded-lg hover:from-blue-800 hover:via-blue-500 hover:to-blue-800 active:scale-[0.98] transition-all duration-200 cursor-pointer"
+      >
+        Add to Cart
+      </button>
     </div>
   );
 }
