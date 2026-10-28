@@ -1,3 +1,18 @@
+# Project "Online Store"
+
+An e-commerce app built with React as part of a React learning project. It fetches real products from the [Fake Store API](https://fakestoreapi.com/) and supports browsing, searching, filtering, product pages, and a persistent shopping cart.
+
+**Stack:** React · Vite · TypeScript · React Router · Tailwind CSS · ESLint
+
+---
+
+##  React Concepts Applied
+
+- **React basics** — components, props, `useState`, `useEffect`, and fetching data from an API.
+- **Routing and global state** — React Router for pages, and the Context API (`CartContext` + `useCart()`) so the cart is shared everywhere without prop drilling.
+- **Real-world behaviour** — `try/catch` error handling with a fallback UI, client-side search and filtering, and saving the cart to `localStorage`.
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
